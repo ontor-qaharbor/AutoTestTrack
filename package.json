@@ -1,5 +1,35 @@
 {
+  "name": "autotest-track",
+  "version": "1.0.0",
+  "description": "Automated testing framework built with Playwright for comprehensive web application testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox", 
+    "test:webkit": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project='Mobile Chrome' --project='Mobile Safari'",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install",
+    "codegen": "playwright codegen"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "e2e",
+    "web-testing",
+    "test-framework"
+  ],
+  "author": "Ontor-Hazari",
+  "license": "MIT",
   "devDependencies": {
     "@playwright/test": "^1.53.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
